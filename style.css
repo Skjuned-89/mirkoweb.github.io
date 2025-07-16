@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+    font-family: "Poppins", sans-serif;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    /* background-color: #1c262f; */
+}
+
+body .body-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://themewagon.github.io/mirko/assets/images/home.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.container {
+    width: 100%;
+    padding: 10px 20px;
+    margin: auto;
+}
+
+nav .menu {
+    display: block;
+}
+
+header {
+    width: 100%;
+    background-color: transparent;
+    position: sticky;
+    top: 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+header .container nav {
+    width: max-content;
+}
+
+header .container nav ul {
+    display: none;
+    transition: all 0.3s ease-in-out;
+
+}
+
+header .container nav ul li:hover .navItm {
+    color: #02DDA8;
+    transition: all 0.3s ease-in-out;
+}
+
+header .container nav ul .drop {
+    position: relative;
+    top: 0;
+}
+
+header .container nav ul .drop .dropdown {
+    width: max-content;
+    position: absolute;
+    padding: 15px 0px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+header .container nav ul .drop:hover .dropdown {
+    display: flex;
+    background-color: #1c262f;
+}
+
+header .container nav ul .drop .dropdown li {
+    width: 100%;
+    background-color: #1c262f;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+header .container nav ul .drop .dropdown li:hover a {
+    transition: all 0.3s ease-in-out;
+    color: #02DDA8;
+}
+
+header .container nav ul li a {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+header .container nav ul .socialMediasLogo {
+    background-color: #02DDA8;
+    padding: 3px 6px;
+    border-radius: 50%;
+}
+
+header .container nav ul .socialMediasLogo i {
+    color: white;
+}
+
+header .container nav ul .socialMediasLogo:hover i {
+    color: #1c262f;
+    transition: all 0.3s ease-in-out;
+}
+
+main .bannerSection {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.bannerSection .bannerContent {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (width>=576px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (width>=768px) {
+
+    nav .menu {
+        display: none;
+    }
+
+    header .container nav {
+        width: 60%;
+    }
+
+    header .container nav ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+}
+
+@media screen and (width>=1024px) {
+    .container {
+        width: 1024px;
+        padding: 0 20px;
+    }
+
+    header .container nav {
+        width: 45%;
+    }
+}
+
+@media screen and (width>=1200px) {
+    .container {
+        width: 1200px;
+        padding: 0 20px;
+    }
+
+}
+
+@media screen and (width>=1400px) {
+    .container {
+        width: 1400px;
+    }
+}
