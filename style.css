@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: all 0.3s ease-in-out;
+    /* transition: all 0.3s ease-in-out; */
     font-family: "Poppins", sans-serif;
 
 
@@ -47,6 +47,7 @@ header {
     background-color: transparent;
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
 header .container {
@@ -55,7 +56,12 @@ header .container {
     align-items: center;
     padding-top: 30px;
     padding-bottom: 10px;
-    /* background-color: #1c262f; */
+}
+
+header .container h1 {
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
 }
 
 header .container nav {
@@ -65,6 +71,7 @@ header .container nav {
 header .container nav ul {
     display: none;
     transition: all 0.3s ease-in-out;
+    opacity: .8;
 
 }
 
@@ -85,6 +92,7 @@ header .container nav ul .drop .dropdown {
     display: none;
     flex-direction: column;
     align-items: flex-start;
+    z-index: 10;
 }
 
 header .container nav ul .drop:hover .dropdown {
@@ -105,6 +113,7 @@ header .container nav ul .drop .dropdown li:hover a {
 }
 
 header .container nav ul li a {
+    transition: all 0.3s ease-in-out;
     font-weight: 500;
     font-size: 14px;
 }
@@ -127,7 +136,6 @@ header .container nav ul .socialMediasLogo:hover i {
 main .bannerSection {
     width: 100%;
     height: 100vh;
-    display: flex;
 }
 
 .bannerSection .bannerContent {
@@ -142,13 +150,68 @@ main .bannerSection {
     font-size: 65px;
     font-weight: 500;
     color: white;
-    line-height: 70px;
+    line-height: 75px;
 }
 
 .bannerSection .bannerContent h1 span {
     background: -webkit-linear-gradient(#0ee951, #00dabf);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.bannerSection .bannerContent p {
+    width: 80%;
+    font-size: 14px;
+    letter-spacing: .5px;
+    font-weight: 300;
+    color: #f8f9fa;
+    opacity: .7;
+    line-height: 24px;
+    margin: 30px 0px;
+}
+
+.bannerSection .bannerContent .bannerItems {
+    margin: 10px 0;
+    padding-right: 50px;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.bannerSection .bannerContent .bannerItems span {
+    font-size: 14px;
+    color: white;
+    opacity: .8;
+}
+
+.bannerSection .bannerContent .bannerItems span i {
+    color: #0ee951;
+    font-size: 30px;
+    opacity: 1;
+}
+
+.bannerSection .bannerContent button {
+    background-color: transparent;
+    width: max-content;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border: 2px solid #0ee951;
+    box-shadow: 5px 5px 0px 1px #0ee951;
+    font-size: 16px;
+    color: white;
+    font-weight: 300;
+    transition: all 0s ease-in-out;
+
+}
+
+.bannerSection .bannerContent button:hover {
+    position: relative;
+    top: 5px;
+    right: -5px;
+    box-shadow: 0px 0px 0px 0px #0ee951;
+    transition: all 0s ease-in-out;
 }
 
 @media screen and (width>=576px) {
@@ -182,7 +245,7 @@ main .bannerSection {
     }
 
     header .container nav {
-        width: 45%;
+        width: 40%;
     }
 }
 
