@@ -15,6 +15,10 @@ a {
     color: white;
 }
 
+li {
+    list-style-type: none;
+}
+
 body {
     width: 100%;
     height: 100%;
@@ -212,6 +216,199 @@ main .bannerSection {
     right: -5px;
     box-shadow: 0px 0px 0px 0px #0ee951;
     transition: all 0s ease-in-out;
+}
+
+.aboutBroadbandSection {
+    width: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+}
+
+.aboutBroadbandSection .broadBandCard1,
+.aboutBroadbandSection .broadBandCard2,
+.aboutBroadbandSection .broadBandCard3 {
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.aboutBroadbandSection .broadBandCard1 i,
+.aboutBroadbandSection .broadBandCard2 i,
+.aboutBroadbandSection .broadBandCard3 i {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #0ee951;
+}
+
+.aboutBroadbandSection .broadBandCard1 h2,
+.aboutBroadbandSection .broadBandCard2 h2,
+.aboutBroadbandSection .broadBandCard3 h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.aboutBroadbandSection .broadBandCard1 p,
+.aboutBroadbandSection .broadBandCard2 p,
+.aboutBroadbandSection .broadBandCard3 p {
+    font-size: 14px;
+    opacity: .7;
+    line-height: 24px;
+    width: 80%;
+}
+
+.aboutBroadbandSection .broadBandCard1 {
+    background-color: #1c262f;
+    color: white;
+}
+
+.aboutBroadbandSection .broadBandCard2 {
+    background-color: #212D37;
+    color: white;
+}
+
+.aboutBroadbandSection .broadBandCard3 {
+    background-color: #FFFFFF;
+    color: black;
+}
+
+.aboutUsSection {
+    width: 100%;
+    background-color: #212D37;
+}
+
+.aboutUsSection .container {
+    display: flex;
+    align-items: center;
+    padding: 50px 30px;
+}
+
+.aboutUsSection .container .aboutUsContent {
+    width: 70%;
+    color: white;
+    margin-top: 30px;
+}
+
+.aboutUsSection .container .aboutUsContent h3 {
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.aboutUsSection .container .aboutUsContent h2 {
+    font-size: 65px;
+    font-weight: 500;
+    line-height: 75px;
+}
+
+.aboutUsSection .container .aboutUsContent p {
+    font-size: 14px;
+    opacity: .7;
+    line-height: 24px;
+    padding-right: 50px;
+    margin: 10px 0px;
+}
+
+.aboutUsSection .container .aboutUsContent button {
+    background-color: transparent;
+    width: max-content;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border: 2px solid #0ee951;
+    box-shadow: 5px 5px 0px 1px #0ee951;
+    font-size: 14px;
+    color: white;
+    font-weight: 300;
+    transition: all 0s ease-in-out;
+}
+
+.aboutUsSection .container .aboutUsContent button:hover {
+    position: relative;
+    top: 5px;
+    right: -5px;
+    box-shadow: 0px 0px 0px 0px #0ee951;
+    transition: all 0s ease-in-out;
+}
+
+.serviceSection {
+    width: 100%;
+    background-color: #1C262F;
+}
+
+.serviceSection .container .serviceTop {
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.serviceSection .container .serviceTop h3 {
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: white;
+}
+
+.serviceSection .container .serviceTop h2 {
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.serviceSection .container .serviceTop p {
+    font-size: 14px;
+    opacity: .6;
+    line-height: 24px;
+    color: white;
+}
+
+.serviceSection .container ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+
+.serviceSection .container ul li {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 2px solid white;
+    margin-bottom: 2%;
+    transition: all 0s ease-in-out;
+
+}
+
+.serviceSection .container ul li:hover {
+    border: 2px solid #0ee951;
+    transform: scale(1.01);
+    box-shadow: 5px 5px 0px 1px #0ee951;
+    transition: all 0s ease-in-out;
+}
+
+.serviceSection .container ul li i {
+    font-size: 40px;
+    color: #0ee951;
+    margin-bottom: 10px;
+}
+
+.serviceSection .container ul li h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.serviceSection .container ul li p {
+    font-size: 14px;
+    opacity: .6;
+    line-height: 24px;
+    color: white;
 }
 
 @media screen and (width>=576px) {
