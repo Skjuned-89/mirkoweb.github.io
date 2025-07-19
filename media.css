@@ -34,6 +34,9 @@
         width: 100%;
         padding: 0 50px;
     }
+    main .bannerSection{
+        height: 100%;
+     }
 
     .aboutBroadbandSection {
         flex-direction: column;
@@ -120,6 +123,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    main .bannerSection {
+        height: 100vh;
     }
 
     .bannerSection .bannerContent {
