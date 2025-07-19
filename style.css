@@ -139,6 +139,7 @@ header .container nav ul .socialMediasLogo:hover i {
 
 main .bannerSection {
     width: 100%;
+    min-height:100vh;
     padding: 100px 0px;
     display: flex;
     align-items: center;
