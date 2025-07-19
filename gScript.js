@@ -3,15 +3,17 @@ gsap.from(".bannerContent", {
     opacity: 0,
     x: -150
 });
-gsap.from(".broadBandCard1 ,.broadBandCard2 ,.broadBandCard3", {
-    scale: 0,
-    duration: 1,
-    opacity: 0,
-    scrollTrigger: {
-        trigger: ".broadBandCard1 ,.broadBandCard2 ,.broadBandCard3",
-        scroller: "body",
-        start: "top 70%"
-    }
+document.querySelectorAll('.broadBandCard1, .broadBandCard2, .broadBandCard3').forEach(card => {
+    gsap.from(card, {
+        scale: 0,
+        duration: 1,
+        opacity: 0,
+        scrollTrigger: {
+            trigger: card,
+            scroller: "body",
+            start: "top 80%"
+        }
+    });
 });
 gsap.from(".aboutUsContent", {
     x: -150,
@@ -34,13 +36,30 @@ gsap.from(".aboutUsSection .container .aboutImage", {
         start: "70% 80%"
     }
 });
-gsap.from(".serviceSection .container ul", {
-    scale: 0,
-    duration: 1,
-    opacity: 0,
-    scrollTrigger: {
-        trigger: ".serviceSection .container ul",
-        scroller: "body",
-        start: "top 90%"
-    }
+gsap.matchMedia().add("(max-width: 1024px)", () => {
+    document.querySelectorAll('.serviceSection .container ul li').forEach(item => {
+        gsap.from(item, {
+            scale: 0,
+            duration: 1,
+            opacity: 0,
+            scrollTrigger: {
+                trigger: item,
+                scroller: "body",
+                start: "top 90%"
+            }
+        });
+    });
 });
+gsap.matchMedia().add("(min-width: 1025px)", () => {
+    gsap.from(".serviceSection .container ul", {
+        scale: 0,
+        duration: 1,
+        opacity: 0,
+        scrollTrigger: {
+            trigger: ".serviceSection .container ul",
+            scroller: "body",
+            start: "top 90%"
+        }
+    });
+});
+
