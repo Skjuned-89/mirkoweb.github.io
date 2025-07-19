@@ -6,8 +6,6 @@
     box-sizing: border-box;
     /* transition: all 0.3s ease-in-out; */
     font-family: "Poppins", sans-serif;
-
-
 }
 
 a {
@@ -140,6 +138,8 @@ header .container nav ul .socialMediasLogo:hover i {
 main .bannerSection {
     width: 100%;
     height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .bannerSection .bannerContent {
@@ -420,18 +420,17 @@ main .bannerSection {
 
 @media screen and (width>=768px) {
     nav .menu {
+        display: block;
+    }
+
+    nav ul {
         display: none;
     }
 
     header .container nav {
-        width: 60%;
-    }
-
-    header .container nav ul {
-        list-style-type: none;
+        width: 100%;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        justify-content: end;
     }
 }
 
@@ -441,8 +440,19 @@ main .bannerSection {
         padding: 0 20px;
     }
 
+    nav .menu {
+        display: none;
+    }
+
     header .container nav {
-        width: 40%;
+        width: 50%;
+    }
+
+    header .container nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 
