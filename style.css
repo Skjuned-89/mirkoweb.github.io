@@ -6,6 +6,8 @@
     box-sizing: border-box;
     /* transition: all 0.3s ease-in-out; */
     font-family: "Poppins", sans-serif;
+
+
 }
 
 a {
@@ -36,7 +38,7 @@ body .body-bg {
 
 .container {
     width: 100%;
-    padding: 10px 20px;
+    padding: 10px 50px;
     margin: auto;
 }
 
@@ -137,13 +139,13 @@ header .container nav ul .socialMediasLogo:hover i {
 
 main .bannerSection {
     width: 100%;
-    height: 100vh;
+    padding: 100px 0px;
     display: flex;
     align-items: center;
 }
 
 .bannerSection .bannerContent {
-    width: 65%;
+    width: 90%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -224,9 +226,9 @@ main .bannerSection {
     display: flex;
 }
 
-.aboutBroadbandSection .broadBandCard1,
-.aboutBroadbandSection .broadBandCard2,
-.aboutBroadbandSection .broadBandCard3 {
+.broadBandCard1,
+.broadBandCard2,
+.broadBandCard3 {
     width: calc(100% / 3);
     display: flex;
     flex-direction: column;
@@ -235,25 +237,25 @@ main .bannerSection {
     padding: 50px 0px;
 }
 
-.aboutBroadbandSection .broadBandCard1 i,
-.aboutBroadbandSection .broadBandCard2 i,
-.aboutBroadbandSection .broadBandCard3 i {
+.broadBandCard1 i,
+.broadBandCard2 i,
+.broadBandCard3 i {
     font-size: 60px;
     margin-bottom: 20px;
     color: #0ee951;
 }
 
-.aboutBroadbandSection .broadBandCard1 h2,
-.aboutBroadbandSection .broadBandCard2 h2,
-.aboutBroadbandSection .broadBandCard3 h2 {
+.broadBandCard1 h2,
+.broadBandCard2 h2,
+.broadBandCard3 h2 {
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 20px;
 }
 
-.aboutBroadbandSection .broadBandCard1 p,
-.aboutBroadbandSection .broadBandCard2 p,
-.aboutBroadbandSection .broadBandCard3 p {
+.broadBandCard1 p,
+.broadBandCard2 p,
+.broadBandCard3 p {
     font-size: 14px;
     opacity: .7;
     line-height: 24px;
@@ -377,10 +379,12 @@ main .bannerSection {
     width: 32%;
     display: flex;
     flex-direction: column;
+    align-items: start;
     padding: 20px;
     border: 2px solid white;
     margin-bottom: 2%;
     transition: all 0s ease-in-out;
+    gap: 5px;
 
 }
 
@@ -409,62 +413,4 @@ main .bannerSection {
     opacity: .6;
     line-height: 24px;
     color: white;
-}
-
-@media screen and (width>=576px) {
-    .container {
-        width: 100%;
-        padding: 0 20px;
-    }
-}
-
-@media screen and (width>=768px) {
-    nav .menu {
-        display: block;
-    }
-
-    nav ul {
-        display: none;
-    }
-
-    header .container nav {
-        width: 100%;
-        display: flex;
-        justify-content: end;
-    }
-}
-
-@media screen and (width>=1024px) {
-    .container {
-        width: 1024px;
-        padding: 0 20px;
-    }
-
-    nav .menu {
-        display: none;
-    }
-
-    header .container nav {
-        width: 50%;
-    }
-
-    header .container nav ul {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-}
-
-@media screen and (width>=1200px) {
-    .container {
-        width: 1200px;
-        padding: 0 20px;
-    }
-}
-
-@media screen and (width>=1400px) {
-    .container {
-        width: 1400px;
-    }
 }
