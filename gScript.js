@@ -21,7 +21,7 @@ gsap.from(".aboutUsContent", {
     scrollTrigger: {
         trigger: ".aboutUsContent",
         scroller: "body",
-        start: "top 30%"
+        start: "50% 80%"
     }
 });
 gsap.from(".aboutUsSection .container .aboutImage", {
@@ -31,7 +31,7 @@ gsap.from(".aboutUsSection .container .aboutImage", {
     scrollTrigger: {
         trigger: ".aboutUsSection .container .aboutImage",
         scroller: "body",
-        start: "bottom 92%"
+        start: "70% 80%"
     }
 });
 gsap.from(".serviceSection .container ul", {
