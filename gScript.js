@@ -62,4 +62,32 @@ gsap.matchMedia().add("(min-width: 1025px)", () => {
         }
     });
 });
+let counterRun = false;
 
+function counter() {
+    if (counterRun) return;
+    counterRun = true;
+    let arr = [1258, 150, 1255, 1157];
+    for (let i = 1; i <= 4; i++) {
+        let a = arr[i - 1];
+        let count = 0;
+        let label = document.getElementsByClassName(`counter${i}`)[0];
+        let interval = setInterval(() => {
+            if (count <= a) {
+                label.innerText = count;
+                count++;
+            } else {
+                clearInterval(interval);
+            }
+        }, 1);
+    }
+}
+gsap.registerPlugin(ScrollTrigger);
+ScrollTrigger.create({
+    trigger: ".ourWorkSection .aboutWork ul li",
+    start: "30% 70%",
+    markers: true,
+    onEnter: () => {
+        counter()
+    }
+})
