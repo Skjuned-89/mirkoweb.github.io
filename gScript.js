@@ -86,7 +86,6 @@ gsap.registerPlugin(ScrollTrigger);
 ScrollTrigger.create({
     trigger: ".ourWorkSection .aboutWork ul li",
     start: "30% 70%",
-    markers: true,
     onEnter: () => {
         counter()
     }
