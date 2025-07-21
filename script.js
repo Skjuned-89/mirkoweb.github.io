@@ -1,5 +1,5 @@
 let headerCont = document.querySelector("header .container")
-document.addEventListener('scroll', () => {
+window.addEventListener('scroll', () => {
     // console.log("scrolling")
     if (window.scrollY > 0) {
         headerCont.style.paddingTop = "10px"
