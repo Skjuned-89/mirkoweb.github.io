@@ -1,4 +1,4 @@
-let headerCont = document.querySelector("Header .container")
+let headerCont = document.querySelector("header .container")
 document.addEventListener('scroll', () => {
     // console.log("scrolling")
     if (window.scrollY > 0) {
