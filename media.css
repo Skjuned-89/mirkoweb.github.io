@@ -1,11 +1,32 @@
+@media screen and (width<=335px) {
+    main .slider .container .container-wrapper {
+        height: 300px;
+    }
+}
+
 @media screen and (width<=576px) {
     .container {
         width: 100%;
-        padding: 0 50px;
+        padding: 0 25px;
     }
+
+    .bannerSection .bannerContent h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .bannerSection .bannerContent p {
+        width: 100%;
+    }
+
 
     .aboutBroadbandSection {
         flex-direction: column;
+    }
+
+    .aboutUsSection .container .aboutUsContent h2 {
+        font-size: 50px;
+        line-height: 60px;
     }
 
     .broadBandCard1,
@@ -22,9 +43,19 @@
         width: 100%;
     }
 
+    .aboutUsSection .container .aboutUsContent h2 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
     .aboutUsSection .container .aboutImage {
         width: 100%;
         margin-top: 100px;
+    }
+
+    .aboutUsSection .container .aboutUsContent h2 {
+        font-size: 50px;
+        line-height: 66px;
     }
 
     .serviceSection .container ul {
@@ -44,15 +75,86 @@
 
     .plansCards .planCard {
         width: 100%;
-
     }
-    
+
+    .ourWorkSection {
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+        padding: 0 20px;
+    }
+
+    .ourWorkSection .aboutWork ul {
+        justify-content: space-between;
+    }
+
+    .ourWorkSection img {
+        width: 100%;
+    }
+
+    .ourWorkSection .aboutWork {
+        width: 90%;
+        margin: auto;
+    }
+
+    .aboutWork h2,
+    .aboutWork h3,
+    .aboutWork p {
+        text-align: center;
+    }
+
+    .aboutWork ul li h3 {
+        text-align: left;
+    }
+
+    .slider .container .container-wrapper {
+        margin: auto;
+        height: 225px;
+    }
+
+    .slider .container .container-wrapper ul li {
+        padding: 10px 20px;
+    }
+
+    .clientInfo h3 {
+        font-size: 14px;
+    }
+
+    .clientInfo p {
+        font-size: 12px;
+    }
+
+    .subscriberSection .container {
+        flex-direction: column;
+    }
+
+    .subscriberSection .container .ourSubscriber {
+        width: 100%;
+        padding: 15px 25px;
+        text-align: center;
+    }
+
+    .subscriberSection .container .inputSubscribe {
+        width: 100%;
+        padding: 15px 25px;
+        text-align: center;
+    }
+
 }
 
 @media screen and (width>=576px) {
     .container {
         width: 100%;
         padding: 0 50px;
+    }
+
+    .bannerSection .bannerContent h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .bannerSection .bannerContent p {
+        width: 100%;
     }
 
     .aboutBroadbandSection {
@@ -71,6 +173,11 @@
 
     .aboutUsSection .container .aboutUsContent {
         width: 90%;
+    }
+
+    .aboutUsSection .container .aboutUsContent h2 {
+        font-size: 50px;
+        line-height: 60px;
     }
 
     .aboutUsSection .container .aboutImage {
@@ -88,6 +195,36 @@
         margin-bottom: 20px;
     }
 
+    .ourWorkSection {
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+        padding: 100px 20px;
+    }
+
+    .ourWorkSection .aboutWork ul {
+        justify-content: space-between;
+    }
+
+    .ourWorkSection img {
+        width: 100%;
+    }
+
+    .ourWorkSection .aboutWork {
+        width: 90%;
+        margin: auto;
+    }
+
+    .aboutWork h2,
+    .aboutWork h3,
+    .aboutWork p {
+        text-align: center;
+    }
+
+    .aboutWork ul li h3 {
+        text-align: left;
+    }
+
     .slider .container .container-wrapper {
         width: 90%;
         margin: auto;
@@ -100,6 +237,22 @@
     .plansCards .planCard {
         width: 100%;
 
+    }
+
+    .subscriberSection .container {
+        flex-direction: column;
+    }
+
+    .subscriberSection .container .ourSubscriber {
+        width: 100%;
+        padding: 15px 25px;
+        text-align: center;
+    }
+
+    .subscriberSection .container .inputSubscribe {
+        width: 100%;
+        padding: 15px 25px;
+        text-align: center;
     }
 
 }
@@ -149,6 +302,7 @@
         margin-bottom: 20px;
 
     }
+
     .plansSection .container .plansCards {
         flex-direction: column;
     }
@@ -202,6 +356,11 @@
         width: 70%;
     }
 
+    .aboutUsSection .container .aboutUsContent h2 {
+        font-size: 60px;
+        line-height: 65px;
+    }
+
     .aboutUsSection .container .aboutImage {
         margin: 0px 0px;
     }
@@ -217,10 +376,31 @@
         margin-bottom: 2%;
     }
 
+    .ourWorkSection {
+        flex-direction: row;
+        padding: 100px 0px;
+    }
+
+    .ourWorkSection img {
+        width: 50%;
+    }
+
+    .ourWorkSection .aboutWork {
+        width: 45%;
+    }
+
+    .aboutWork h2,
+    .aboutWork h3,
+    .aboutWork p {
+        text-align: left;
+    }
+
     .slider .container .container-wrapper {
         width: 90%;
+        height: 330px;
         margin: auto;
     }
+
     .plansSection .container .plansCards {
         flex-direction: row;
     }
@@ -228,6 +408,22 @@
     .plansCards .planCard {
         width: 32%;
 
+    }
+
+    .subscriberSection .container {
+        flex-direction: row;
+    }
+
+    .subscriberSection .container .ourSubscriber {
+        width: 50%;
+        padding: 0px;
+        text-align: left;
+    }
+
+    .subscriberSection .container .inputSubscribe {
+        width: 50%;
+        padding: 0px;
+        text-align: right;
     }
 
 }
@@ -256,6 +452,7 @@
 
     .slider .container .container-wrapper {
         width: 90%;
+        height: fit-content;
         margin: auto;
     }
 }
