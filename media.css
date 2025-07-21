@@ -18,15 +18,35 @@
         flex-direction: column;
     }
 
+    .aboutUsSection .container .aboutUsContent {
+        width: 100%;
+    }
+
+    .aboutUsSection .container .aboutImage {
+        width: 100%;
+        margin-top: 100px;
+    }
+
     .serviceSection .container ul {
         flex-direction: column;
         align-items: center;
     }
 
     .serviceSection .container ul li {
-        width: 80%;
+        width: 100%;
         padding: 10px;
+        margin-bottom: 20px;
     }
+
+    .plansSection .container .plansCards {
+        flex-direction: column;
+    }
+
+    .plansCards .planCard {
+        width: 100%;
+
+    }
+    
 }
 
 @media screen and (width>=576px) {
@@ -49,6 +69,14 @@
         flex-direction: column;
     }
 
+    .aboutUsSection .container .aboutUsContent {
+        width: 90%;
+    }
+
+    .aboutUsSection .container .aboutImage {
+        margin: 100px 0px;
+    }
+
     .serviceSection .container ul {
         flex-direction: column;
         align-items: center;
@@ -57,6 +85,21 @@
     .serviceSection .container ul li {
         width: 80%;
         padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .slider .container .container-wrapper {
+        width: 90%;
+        margin: auto;
+    }
+
+    .plansSection .container .plansCards {
+        flex-direction: column;
+    }
+
+    .plansCards .planCard {
+        width: 100%;
+
     }
 
 }
@@ -100,6 +143,22 @@
         margin: 30px 0px;
     }
 
+    .serviceSection .container ul li {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+
+    }
+    .plansSection .container .plansCards {
+        flex-direction: column;
+    }
+
+    .plansCards .planCard {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
 }
 
 @media screen and (width>=1024px) {
@@ -139,6 +198,14 @@
         flex-direction: row;
     }
 
+    .aboutUsSection .container .aboutUsContent {
+        width: 70%;
+    }
+
+    .aboutUsSection .container .aboutImage {
+        margin: 0px 0px;
+    }
+
     .serviceSection .container ul {
         flex-direction: row;
         justify-content: space-between;
@@ -146,6 +213,21 @@
 
     .serviceSection .container ul li {
         width: 32%;
+        margin: auto;
+        margin-bottom: 2%;
+    }
+
+    .slider .container .container-wrapper {
+        width: 90%;
+        margin: auto;
+    }
+    .plansSection .container .plansCards {
+        flex-direction: row;
+    }
+
+    .plansCards .planCard {
+        width: 32%;
+
     }
 
 }
@@ -171,10 +253,20 @@
     .serviceSection .container ul li {
         padding: 20px;
     }
+
+    .slider .container .container-wrapper {
+        width: 90%;
+        margin: auto;
+    }
 }
 
 @media screen and (width>=1400px) {
     .container {
         width: 1400px;
+    }
+
+    .slider .container .container-wrapper {
+        width: 1200px;
+        margin: auto;
     }
 }
