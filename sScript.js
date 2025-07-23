@@ -3,13 +3,8 @@ let swiper = new Swiper(".container-wrapper", {
     spaceBetween: 30,
     loop: true,
     autoplay: {
-        delay: 2500,
+        delay: 3500,
         disableOnInteraction: false,
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        dynamicBullets: true,
-        clickable: true,
     },
     navigation: {
         nextEl: ".swiper-button-next",
