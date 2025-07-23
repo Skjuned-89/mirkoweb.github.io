@@ -1,27 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-
 a {
     text-decoration: none;
     color: white;
 }
-
 li {
     list-style-type: none;
 }
-
 body {
     width: 100%;
     height: 100%;
     background-color: transparent;
 }
-
 body .body-bg {
     position: fixed;
     width: 100%;
@@ -31,17 +26,14 @@ body .body-bg {
     background-position: center;
     z-index: -1;
 }
-
 .container {
     width: 100%;
     padding: 10px 50px;
     margin: auto;
 }
-
 nav .menu {
     display: block;
 }
-
 header {
     width: 100%;
     background-color: transparent;
@@ -49,7 +41,6 @@ header {
     top: 0;
     z-index: 10;
 }
-
 header .container {
     display: flex;
     justify-content: space-between;
@@ -57,34 +48,27 @@ header .container {
     padding-top: 30px;
     padding-bottom: 10px;
 }
-
 header .container h1 {
     font-size: 30px;
     font-weight: 500;
     color: white;
 }
-
 header .container nav {
     width: max-content;
 }
-
 header .container nav ul {
     display: none;
     transition: all 0.3s ease-in-out;
     opacity: .8;
-
 }
-
 header .container nav ul li:hover .navItm {
     color: #02DDA8;
     transition: all 0.3s ease-in-out;
 }
-
 header .container nav ul .drop {
     position: relative;
     top: 0;
 }
-
 header .container nav ul .drop .dropdown {
     width: max-content;
     position: absolute;
@@ -94,45 +78,37 @@ header .container nav ul .drop .dropdown {
     align-items: flex-start;
     z-index: 10;
 }
-
 header .container nav ul .drop:hover .dropdown {
     display: flex;
     background-color: #1c262f;
 }
-
 header .container nav ul .drop .dropdown li {
     width: 100%;
     background-color: #1c262f;
     padding: 10px 15px;
     border-radius: 5px;
 }
-
 header .container nav ul .drop .dropdown li:hover a {
     transition: all 0.3s ease-in-out;
     color: #02DDA8;
 }
-
 header .container nav ul li a {
     transition: all 0.3s ease-in-out;
     font-weight: 500;
     font-size: 14px;
 }
-
 header .container nav ul .socialMediasLogo {
     background: linear-gradient(#0ee951, #00dabf);
     padding: 3px 6px;
     border-radius: 50%;
 }
-
 header .container nav ul .socialMediasLogo i {
     color: white;
 }
-
 header .container nav ul .socialMediasLogo:hover i {
     color: #1c262f;
     transition: all 0.3s ease-in-out;
 }
-
 main .bannerSection {
     width: 100%;
     min-height: 100vh;
@@ -140,7 +116,6 @@ main .bannerSection {
     display: flex;
     align-items: center;
 }
-
 .bannerSection .bannerContent {
     width: 90%;
     height: 100%;
@@ -148,20 +123,17 @@ main .bannerSection {
     flex-direction: column;
     justify-content: center;
 }
-
 .bannerSection .bannerContent h1 {
     font-size: 65px;
     font-weight: 500;
     color: white;
     line-height: 75px;
 }
-
 .bannerSection .bannerContent h1 span {
     background: -webkit-linear-gradient(#0ee951, #00dabf);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 .bannerSection .bannerContent p {
     width: 80%;
     font-size: 14px;
@@ -172,7 +144,6 @@ main .bannerSection {
     line-height: 24px;
     margin: 30px 0px;
 }
-
 .bannerSection .bannerContent .bannerItems {
     margin: 10px 0;
     padding-right: 50px;
@@ -182,19 +153,16 @@ main .bannerSection {
     align-items: center;
     gap: 20px;
 }
-
 .bannerSection .bannerContent .bannerItems span {
     font-size: 14px;
     color: white;
     opacity: .8;
 }
-
 .bannerSection .bannerContent .bannerItems span i {
     color: #0ee951;
     font-size: 30px;
     opacity: 1;
 }
-
 .bannerSection .bannerContent button {
     background-color: transparent;
     width: max-content;
@@ -206,9 +174,7 @@ main .bannerSection {
     color: white;
     font-weight: 300;
     transition: all 0s ease-in-out;
-
 }
-
 .bannerSection .bannerContent button:hover {
     position: relative;
     top: 5px;
@@ -216,13 +182,11 @@ main .bannerSection {
     box-shadow: 0px 0px 0px 0px #0ee951;
     transition: all 0s ease-in-out;
 }
-
 .aboutBroadbandSection {
     width: 100%;
     background-color: #FFFFFF;
     display: flex;
 }
-
 .broadBandCard1,
 .broadBandCard2,
 .broadBandCard3 {
@@ -233,7 +197,6 @@ main .bannerSection {
     text-align: center;
     padding: 50px 0px;
 }
-
 .broadBandCard1 i,
 .broadBandCard2 i,
 .broadBandCard3 i {
@@ -241,7 +204,6 @@ main .bannerSection {
     margin-bottom: 20px;
     color: #0ee951;
 }
-
 .broadBandCard1 h2,
 .broadBandCard2 h2,
 .broadBandCard3 h2 {
@@ -249,7 +211,6 @@ main .bannerSection {
     font-weight: 500;
     margin-bottom: 20px;
 }
-
 .broadBandCard1 p,
 .broadBandCard2 p,
 .broadBandCard3 p {
@@ -258,51 +219,42 @@ main .bannerSection {
     line-height: 24px;
     width: 80%;
 }
-
 .aboutBroadbandSection .broadBandCard1 {
     background-color: #1c262f;
     color: white;
 }
-
 .aboutBroadbandSection .broadBandCard2 {
     background-color: #212D37;
     color: white;
 }
-
 .aboutBroadbandSection .broadBandCard3 {
     background-color: #FFFFFF;
     color: black;
 }
-
 .aboutUsSection {
     width: 100%;
     background-color: #212D37;
 }
-
 .aboutUsSection .container {
     display: flex;
     align-items: center;
     padding: 50px 30px;
 }
-
 .aboutUsSection .container .aboutUsContent {
     color: white;
     margin-top: 30px;
 }
-
 .aboutUsSection .container .aboutUsContent h3 {
     font-size: 16px;
     font-weight: 300;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
-
 .aboutUsSection .container .aboutUsContent h2 {
     font-size: 65px;
     font-weight: 500;
     line-height: 75px;
 }
-
 .aboutUsSection .container .aboutUsContent p {
     font-size: 14px;
     opacity: .7;
@@ -310,7 +262,6 @@ main .bannerSection {
     padding-right: 50px;
     margin: 10px 0px;
 }
-
 .aboutUsSection .container .aboutUsContent button {
     background-color: transparent;
     width: max-content;
@@ -323,7 +274,6 @@ main .bannerSection {
     font-weight: 300;
     transition: all 0s ease-in-out;
 }
-
 .aboutUsSection .container .aboutUsContent button:hover {
     position: relative;
     top: 5px;
@@ -331,19 +281,16 @@ main .bannerSection {
     box-shadow: 0px 0px 0px 0px #0ee951;
     transition: all 0s ease-in-out;
 }
-
 .serviceSection,
 .plansSection {
     width: 100%;
     background-color: #1C262F;
 }
-
 .serviceSection .container .serviceTop,
 .plansSection .container .planTop {
     text-align: center;
     padding: 50px 0px;
 }
-
 .serviceSection .container .serviceTop h3,
 .plansSection .container .planTop h3 {
     font-size: 16px;
@@ -351,7 +298,6 @@ main .bannerSection {
     text-transform: uppercase;
     color: white;
 }
-
 .serviceSection .container .serviceTop h2,
 .plansSection .container .planTop h2 {
     font-size: 30px;
@@ -360,7 +306,6 @@ main .bannerSection {
     text-transform: capitalize;
     margin-bottom: 10px;
 }
-
 .serviceSection .container .serviceTop p,
 .plansSection .container .planTop p {
     font-size: 14px;
@@ -368,14 +313,12 @@ main .bannerSection {
     line-height: 24px;
     color: white;
 }
-
 .serviceSection .container ul {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     padding-bottom: 50px;
 }
-
 .serviceSection .container ul li {
     width: 32%;
     display: flex;
@@ -386,71 +329,59 @@ main .bannerSection {
     margin-bottom: 2%;
     transition: all 0s ease-in-out;
     gap: 5px;
-
 }
-
 .serviceSection .container ul li:hover {
     border: 2px solid #0ee951;
     transform: scale(1.01);
     box-shadow: 5px 5px 0px 1px #0ee951;
     transition: all 0s ease-in-out;
 }
-
 .serviceSection .container ul li i {
     font-size: 40px;
     color: #0ee951;
     margin-bottom: 10px;
 }
-
 .serviceSection .container ul li h2 {
     font-size: 20px;
     font-weight: 500;
     color: white;
     margin-bottom: 10px;
 }
-
 .serviceSection .container ul li p {
     font-size: 14px;
     opacity: .6;
     line-height: 24px;
     color: white;
 }
-
 .plansSection {
     background-color: #212D37;
 }
-
 .plansCards {
     display: flex;
     justify-content: space-between;
 }
-
 .plansCards .planCard {
     padding: 30px 20px;
     border: 2px solid white;
     color: white;
     margin-bottom: 20px;
 }
-
 .plansCards .planCard h3 {
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 20px;
 }
-
 .plansCards .planCard p {
     font-size: 14px;
     font-weight: 400;
     margin-bottom: 20px;
 }
-
 .plansCards .planCard ul {
     display: flex;
     flex-direction: column;
     gap: 25px;
     margin-bottom: 20px;
 }
-
 .plansCards .planCard ul li {
     display: flex;
     align-items: center;
@@ -458,19 +389,16 @@ main .bannerSection {
     font-size: 14px;
     font-weight: 400;
 }
-
 .plansCards .planCard ul li i {
     color: #0ee951;
     font-size: 18px;
 }
-
 .plansCards .planCard h2 {
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 30px;
     color: white;
 }
-
 .plansCards .planCard button {
     background-color: transparent;
     width: max-content;
@@ -483,7 +411,6 @@ main .bannerSection {
     font-weight: 300;
     transition: all 0s ease-in-out;
 }
-
 .plansCards .planCard button:hover {
     position: relative;
     top: 5px;
@@ -491,7 +418,6 @@ main .bannerSection {
     box-shadow: 0px 0px 0px 0px #0ee951;
     transition: all 0s ease-in-out;
 }
-
 .ourWorkSection {
     width: 100%;
     background-color: #1C262F;
@@ -499,43 +425,36 @@ main .bannerSection {
     display: flex;
     gap: 2%;
 }
-
 .ourWorkSection img {
     width: 50%;
     object-fit: cover;
     object-position: center;
 }
-
 .ourWorkSection .aboutWork {
     width: 45%;
     margin: auto;
     color: white;
 }
-
 .ourWorkSection .aboutWork h3 {
     font-size: 16px;
     font-weight: 300;
 }
-
 .ourWorkSection .aboutWork h2 {
     font-size: 30px;
     font-weight: 500;
     text-transform: capitalize;
     margin-bottom: 10px;
 }
-
 .ourWorkSection .aboutWork p {
     font-size: 14px;
     opacity: .7;
     line-height: 24px;
 }
-
 .ourWorkSection .aboutWork ul {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
-
 .ourWorkSection .aboutWork ul li {
     width: 45%;
     padding: 50px 10px;
@@ -543,7 +462,6 @@ main .bannerSection {
     flex-direction: column;
     gap: 10px;
 }
-
 .ourWorkSection .aboutWork ul li i {
     font-size: 40px;
     background: -webkit-linear-gradient(#0ee951, #00dabf);
@@ -551,7 +469,6 @@ main .bannerSection {
     -webkit-text-fill-color: transparent;
     margin-bottom: 10px;
 }
-
 .counter1,
 .counter2,
 .counter3,
@@ -559,26 +476,22 @@ main .bannerSection {
     font-size: 30px;
     font-weight: 500;
 }
-
 .testimonialSection {
     width: 100%;
     background-color: #1C262F;
     padding: 50px 0px;
 }
-
 .testimonialSection .container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .testimonialSection .container h3 {
     font-size: 16px;
     font-weight: 300;
     text-transform: uppercase;
     color: white;
 }
-
 .testimonialSection .container h2 {
     font-size: 30px;
     font-weight: 500;
@@ -586,7 +499,6 @@ main .bannerSection {
     text-transform: capitalize;
     margin-bottom: 10px;
 }
-
 .testimonialSection .container p {
     font-size: 14px;
     opacity: .6;
@@ -594,7 +506,6 @@ main .bannerSection {
     text-align: center;
     color: white;
 }
-
 .slider {
     width: 100%;
     display: flex;
@@ -603,21 +514,17 @@ main .bannerSection {
     background-color: #1C262F;
     padding-bottom: 100px;
 }
-
 .slider .container {
     position: relative;
 }
-
 .slider .container .container-wrapper {
     width: 80%;
     overflow: hidden;
 }
-
 .slider .container .container-wrapper ul {
     width: 100%;
     list-style: none;
 }
-
 .slider .container .container-wrapper ul li {
     border-radius: 10px;
     padding: 20px 30px;
@@ -627,13 +534,11 @@ main .bannerSection {
     border: 2px solid transparent;
     border-image: linear-gradient(to right, #0ee951, #00dabf) 1;
 }
-
 .swiper-wrapper .swiper-slide .aboutClient {
     display: flex;
     align-items: center;
     margin-top: 20px;
 }
-
 .swiper-wrapper .swiper-slide .aboutClient img {
     width: 60px;
     height: 60px;
@@ -641,63 +546,52 @@ main .bannerSection {
     margin-right: 10px;
     object-fit: cover;
 }
-
 .clientInfo h3 {
     font-size: 16px;
     font-weight: 500;
     color: white;
 }
-
 .clientInfo p {
     font-size: 14px;
     color: white;
     opacity: .7;
 }
-
 .swiper-wrapper .swiper-slide .card {
     width: 100%;
     height: 100%;
 }
-
 .swiper-wrapper .swiper-slide .card p {
     font-size: 14px;
     line-height: 24px;
     color: white;
 }
-
 .swiper-button-prev {
     left: 10px;
 }
-
 .swiper-button-next {
     right: 10px;
 }
-
 .swiper-button-next,
 .swiper-button-prev {
     width: 50px;
     height: 50px;
     color: #868686;
 }
-
 .subscriberSection {
     width: 100%;
     background-color: #212D37;
 }
-
 .subscriberSection .container {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 50px;
 }
-
 .subscriberSection .container .ourSubscriber h4 {
     font-size: 22px;
     font-weight: 500;
     color: white;
 }
-
 .subscriberSection .container .ourSubscriber p {
     font-size: 14px;
     opacity: .7;
@@ -705,7 +599,6 @@ main .bannerSection {
     color: white;
     margin-top: 10px;
 }
-
 .subscriberSection .container .inputSubscribe input {
     width: 70%;
     padding: 11px;
@@ -713,7 +606,6 @@ main .bannerSection {
     border-radius: 5px;
     margin-top: 10px;
 }
-
 .subscriberSection .container .inputSubscribe button {
     padding: 10px 25px;
     background-color: transparent;
@@ -723,7 +615,6 @@ main .bannerSection {
     border: 2px solid #0ee951;
     margin-left: -6px;
 }
-
 .contactSection {
     width: 100%;
     background-color: #1C262F;
@@ -731,19 +622,17 @@ main .bannerSection {
     padding-left: 50px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
-
 .contactSection .contactContent {
     width: 45%;
 }
-
 .contactSection .contactContent h3 {
     font-size: 16px;
     font-weight: 300;
     text-transform: uppercase;
     color: white;
 }
-
 .contactSection .contactContent h2 {
     font-size: 30px;
     font-weight: 500;
@@ -751,14 +640,12 @@ main .bannerSection {
     text-transform: capitalize;
     margin-bottom: 10px;
 }
-
 .contactSection .contactContent p {
     font-size: 14px;
     opacity: .6;
     line-height: 24px;
     color: white;
 }
-
 .contactSection .contactContent form {
     margin-top: 50px;
     width: 100%;
@@ -766,33 +653,47 @@ main .bannerSection {
     flex-direction: column;
     gap: 20px;
 }
-
 .contactSection .contactContent form input {
     width: 100%;
     padding: 15px 20px;
     border-radius: 5px;
     border: none;
 }
-
 .contactSection .contactContent form .duo {
     display: flex;
     justify-content: space-between;
 }
-
 .contactSection .contactContent form .duo input {
     width: 48%;
     padding: 15px 20px;
 }
-
 .contactSection .contactContent form textarea {
     width: 100%;
     height: 200px;
     padding: 15px 20px;
     border-radius: 10px;
 }
-
-
 .contactSection img {
     width: 50%;
     object-fit: cover;
+}
+.contactSection .btn button {
+    width: 100%;
+    margin-top: 50px;
+    background-color: transparent;
+    width: max-content;
+    padding: 10px 30px;
+    border: 2px solid #0ee951;
+    box-shadow: 5px 5px 0px 1px #0ee951;
+    font-size: 14px;
+    color: white;
+    font-weight: 300;
+    transition: all 0s ease-in-out;
+}
+.contactSection .btn button:hover {
+   position: relative;
+    top: 5px;
+    right: -5px;
+    box-shadow: 0px 0px 0px 0px #0ee951;
+    transition: all 0s ease-in-out;
 }
