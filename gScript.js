@@ -166,14 +166,14 @@ gsap.from(".subscriberSection .container .inputSubscribe", {
         start: "top 70%"
     }
 });
-gsap.from(".contactSection .contactContent", {
-    x: -150,
+gsap.from(".contactSection .contactContent",{
+    x: -100,
     duration: 1,
     opacity: 0,
     scrollTrigger: {
-        trigger: ".contactSection.contactContent",
+        trigger: ".contactSection .contactContent",
         scroller: "body",
-        start: "top 80%"
+        start: "top 85%"
     }
 });
 gsap.from(".contactSection img", {
@@ -183,6 +183,6 @@ gsap.from(".contactSection img", {
     scrollTrigger: {
         trigger: ".contactSection img",
         scroller: "body",
-        start: "top 85%"
+        start: "top 70%"
     }
 });
