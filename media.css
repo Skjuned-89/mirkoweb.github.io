@@ -6,7 +6,7 @@
 @media screen and (width<=576px) {
     .container {
         width: 100%;
-        padding: 0 25px;
+        padding: 0 20px;
     }
     .bannerSection .bannerContent h1 {
         font-size: 50px;
@@ -29,6 +29,7 @@
     }
     .aboutUsSection .container {
         flex-direction: column;
+        padding: 0px 20px;
     }
     .aboutUsSection .container .aboutUsContent {
         width: 100%;
@@ -99,6 +100,7 @@
     }
     .subscriberSection .container {
         flex-direction: column;
+        padding: 0px 10px;
     }
     .subscriberSection .container .ourSubscriber {
         width: 100%;
@@ -107,8 +109,20 @@
     }
     .subscriberSection .container .inputSubscribe {
         width: 100%;
-        padding: 15px 25px;
+        padding: 10px;
         text-align: center;
+    }
+    .subscriberSection .container .inputSubscribe input {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-left: -5px;
+    }
+    .subscriberSection .container .inputSubscribe button {
+        width: 100%;
+    }
+    .detailsSection .container ul li {
+        width: calc(100% / 1);
+        margin: 25px 0px;
     }
 }
 @media screen and (width>=576px) {
@@ -200,6 +214,28 @@
         padding: 15px 25px;
         text-align: center;
     }
+    .contactSection{
+        padding: 50px;
+    }
+    .contactSection .contactContent {
+        width: 100%;
+        padding: 20px;
+    }
+    .contactSection img {
+        display: none;
+    }
+    .contactSection .btn {
+        width: 100%;
+        padding: 15px 25px;
+    }
+    .detailsSection .container ul{
+        align-items: center;
+        flex-direction: column;
+    }
+    .detailsSection .container ul li {
+        width: 100%;
+        margin: 25px 0px;
+    }
 }
 @media screen and (width>=768px) {
     .container {
@@ -245,6 +281,10 @@
         width: 80%;
         margin: auto;
         margin-bottom: 20px;
+    }
+    .detailsSection .container ul li {
+        width: 100%;
+        align-items: center;
     }
 }
 @media screen and (width>=1024px) {
@@ -329,10 +369,27 @@
         padding: 0px;
         text-align: left;
     }
-   .subscriberSection .container .inputSubscribe {
+    .subscriberSection .container .inputSubscribe {
         width: 50%;
         padding: 0px;
         text-align: right;
+    }
+    .contactSection {
+        padding: 50px;
+    }
+    .contactSection .contactContent {
+        width: 45%;
+        padding: 0px;
+    }
+    .contactSection img {
+        display: block;
+    }
+    .detailsSection .container ul{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .detailsSection .container ul li{
+        width: calc(100% / 2);
     }
 }
 @media screen and (width>=1200px) {
@@ -356,6 +413,9 @@
         width: 90%;
         height: fit-content;
         margin: auto;
+    }
+    .detailsSection .container ul li{
+        width: calc(100% / 4);
     }
 }
 @media screen and (width>=1400px) {
