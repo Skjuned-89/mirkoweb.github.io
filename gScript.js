@@ -11,7 +11,7 @@ document.querySelectorAll('.broadBandCard1, .broadBandCard2, .broadBandCard3').f
         scrollTrigger: {
             trigger: card,
             scroller: "body",
-            start: "top 80%"
+            start: "top 100%"
         }
     });
 });
@@ -63,7 +63,6 @@ gsap.matchMedia().add("(min-width: 1025px)", () => {
     });
 });
 let counterRun = false;
-
 function counter() {
     if (counterRun) return;
     counterRun = true;
@@ -90,3 +89,100 @@ ScrollTrigger.create({
         counter()
     }
 })
+gsap.matchMedia().add("(max-width: 1024px)", () => {
+    document.querySelectorAll('.plansSection .container .plansCards .planCard').forEach(item => {
+        console.log(item);
+        gsap.from(item, {
+            scale: 0,
+            duration: 1,
+            opacity: 0,
+            scrollTrigger: {
+                trigger: item,
+                scroller: "body",
+                start: "top 90%"
+            }
+        });
+    });
+});
+gsap.matchMedia().add("(min-width: 1025px)", () => {
+    gsap.from(".plansSection .container .plansCards ", {
+        scale: 0,
+        duration: 1,
+        opacity: 0,
+        scrollTrigger: {
+            trigger: ".plansSection .container .plansCards",
+            scroller: "body",
+            start: "top 80%"
+        }
+    });
+});
+gsap.from(".ourWorkSection img", {
+    x: -150,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: ".ourWorkSection img",
+        scroller: "body",
+        start: "top 80%"
+    }
+})
+gsap.from(".ourWorkSection .aboutWork ul li", {
+    y: 150,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: ".ourWorkSection .aboutWork ul li",
+        scroller: "body",
+        start: "top 80%"
+    }
+});
+gsap.from(".slider .container .container-wrapper", {
+    scale: 0,
+    duration: 1,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: ".slider .container .container-wrapper",
+        scroller: "body",
+        start: "top 80%"
+    }
+});
+gsap.from(".subscriberSection .container .ourSubscriber", {
+    x: -100,
+    duration: 1,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: ".subscriberSection .container .ourSubscriber",
+        scroller: "body",
+        start: "top 85%"
+    }
+});
+gsap.from(".subscriberSection .container .inputSubscribe", {
+    y: -100,
+    duration: 1,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: ".subscriberSection .container .inputSubscribe",
+        scroller: "body",
+        start: "top 70%"
+    }
+});
+gsap.from(".contactSection .contactContent", {
+    x: -150,
+    duration: 1,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: ".contactSection.contactContent",
+        scroller: "body",
+        start: "top 80%"
+    }
+});
+gsap.from(".contactSection img", {
+    y: -100,
+    duration: 1,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: ".contactSection img",
+        scroller: "body",
+        start: "top 85%"
+    }
+});
