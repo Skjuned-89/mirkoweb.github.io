@@ -615,6 +615,9 @@ main .bannerSection {
     border: 2px solid #0ee951;
     margin-left: -6px;
 }
+.subscriberSection .container .inputSubscribe button:hover{
+    background-color: #0ee951;
+}
 .contactSection {
     width: 100%;
     background-color: #1C262F;
@@ -696,4 +699,39 @@ main .bannerSection {
     right: -5px;
     box-shadow: 0px 0px 0px 0px #0ee951;
     transition: all 0s ease-in-out;
+}
+.detailsSection {
+    width: 100%;
+    background-color: #212D37;
+    padding: 50px 0px;
+}
+.detailsSection .container ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.detailsSection .container ul li {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.detailsSection .container ul li i {
+    font-size: 50px;
+    font-weight: 500;
+    background: -webkit-linear-gradient(#0ee951, #00dabf);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-right: 10px;
+}
+.detailsSection .container ul li .detail h3 {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+}
+.detailsSection .container ul li .detail p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    opacity: .7;
 }
