@@ -7,5 +7,4 @@ window.addEventListener('scroll', () => {
         headerCont.style.paddingTop = "30px"
         headerCont.parentElement.style.backgroundColor = "transparent"
     }
-
 })
