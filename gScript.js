@@ -5,7 +5,7 @@ gsap.from(".bannerContent", {
 });
 document.querySelectorAll('.broadBandCard1, .broadBandCard2, .broadBandCard3').forEach(card => {
     gsap.from(card, {
-        scale: 0,
+        scale: 0.3,
         duration: 1,
         opacity: 0,
         scrollTrigger: {
@@ -39,7 +39,7 @@ gsap.from(".aboutUsSection .container .aboutImage", {
 gsap.matchMedia().add("(max-width: 1024px)", () => {
     document.querySelectorAll('.serviceSection .container ul li').forEach(item => {
         gsap.from(item, {
-            scale: 0,
+            scale: 0.3,
             duration: 1,
             opacity: 0,
             scrollTrigger: {
@@ -52,7 +52,7 @@ gsap.matchMedia().add("(max-width: 1024px)", () => {
 });
 gsap.matchMedia().add("(min-width: 1025px)", () => {
     gsap.from(".serviceSection .container ul", {
-        scale: 0,
+        scale: 0.3,
         duration: 1,
         opacity: 0,
         scrollTrigger: {
@@ -93,7 +93,7 @@ gsap.matchMedia().add("(max-width: 1024px)", () => {
     document.querySelectorAll('.plansSection .container .plansCards .planCard').forEach(item => {
         console.log(item);
         gsap.from(item, {
-            scale: 0,
+            scale: 0.3,
             duration: 1,
             opacity: 0,
             scrollTrigger: {
@@ -106,7 +106,7 @@ gsap.matchMedia().add("(max-width: 1024px)", () => {
 });
 gsap.matchMedia().add("(min-width: 1025px)", () => {
     gsap.from(".plansSection .container .plansCards ", {
-        scale: 0,
+        scale: 0.3,
         duration: 1,
         opacity: 0,
         scrollTrigger: {
@@ -137,7 +137,7 @@ gsap.from(".ourWorkSection .aboutWork ul li", {
     }
 });
 gsap.from(".slider .container .container-wrapper", {
-    scale: 0,
+    scale: 0.3,
     duration: 1,
     opacity: 0,
     scrollTrigger: {
@@ -184,5 +184,15 @@ gsap.from(".contactSection img", {
         trigger: ".contactSection img",
         scroller: "body",
         start: "top 70%"
+    }
+});
+gsap.from(".detailsSection .container ul", {
+    scale: 0.3,
+    duration: 1,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: ".detailsSection .container ul",
+        scroller: "body",
+        start: "top 90%"
     }
 });
