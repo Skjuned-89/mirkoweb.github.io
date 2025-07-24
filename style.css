@@ -12,6 +12,27 @@ a {
 li {
     list-style-type: none;
 }
+button{
+    background-color: transparent;
+    width: max-content;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, #0ee951, #00dabf) 1;
+    box-shadow: 5px 5px 0px 1px #0ee951;
+    font-size: 16px;
+    color: white;
+    font-weight: 300;
+    transition: all 0s ease-in-out;
+    cursor: pointer;
+}
+button:hover {
+    position: relative;
+    top: 5px;
+    right: -5px;
+    box-shadow: 0px 0px 0px 0px #0ee951;
+    transition: all 0s ease-in-out;
+}
 body {
     width: 100%;
     height: 100%;
@@ -25,6 +46,24 @@ body .body-bg {
     background-size: cover;
     background-position: center;
     z-index: -1;
+}
+body .topbtn{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    cursor: pointer;
+    background-color: #323137;
+    border-radius: 50%;
+    z-index: 20;
+}
+body .topbtn:hover {
+    background-color: black;
+    color: white;
+}
+body .topbtn i{
+    color: white;
+    font-size: 50px;
+    font-weight: 100;
 }
 .container {
     width: 100%;
@@ -101,6 +140,7 @@ header .container nav ul .socialMediasLogo {
     background: linear-gradient(#0ee951, #00dabf);
     padding: 3px 6px;
     border-radius: 50%;
+    cursor: pointer;
 }
 header .container nav ul .socialMediasLogo i {
     color: white;
@@ -162,25 +202,6 @@ main .bannerSection {
     color: #0ee951;
     font-size: 30px;
     opacity: 1;
-}
-.bannerSection .bannerContent button {
-    background-color: transparent;
-    width: max-content;
-    padding: 10px 30px;
-    margin-top: 20px;
-    border: 2px solid #0ee951;
-    box-shadow: 5px 5px 0px 1px #0ee951;
-    font-size: 16px;
-    color: white;
-    font-weight: 300;
-    transition: all 0s ease-in-out;
-}
-.bannerSection .bannerContent button:hover {
-    position: relative;
-    top: 5px;
-    right: -5px;
-    box-shadow: 0px 0px 0px 0px #0ee951;
-    transition: all 0s ease-in-out;
 }
 .aboutBroadbandSection {
     width: 100%;
@@ -261,25 +282,6 @@ main .bannerSection {
     line-height: 24px;
     padding-right: 50px;
     margin: 10px 0px;
-}
-.aboutUsSection .container .aboutUsContent button {
-    background-color: transparent;
-    width: max-content;
-    padding: 10px 30px;
-    margin-top: 20px;
-    border: 2px solid #0ee951;
-    box-shadow: 5px 5px 0px 1px #0ee951;
-    font-size: 14px;
-    color: white;
-    font-weight: 300;
-    transition: all 0s ease-in-out;
-}
-.aboutUsSection .container .aboutUsContent button:hover {
-    position: relative;
-    top: 5px;
-    right: -5px;
-    box-shadow: 0px 0px 0px 0px #0ee951;
-    transition: all 0s ease-in-out;
 }
 .serviceSection,
 .plansSection {
@@ -398,25 +400,6 @@ main .bannerSection {
     font-weight: 500;
     margin-bottom: 30px;
     color: white;
-}
-.plansCards .planCard button {
-    background-color: transparent;
-    width: max-content;
-    padding: 10px 30px;
-    margin-bottom: 20px;
-    border: 2px solid #0ee951;
-    box-shadow: 5px 5px 0px 1px #0ee951;
-    font-size: 14px;
-    color: white;
-    font-weight: 300;
-    transition: all 0s ease-in-out;
-}
-.plansCards .planCard button:hover {
-    position: relative;
-    top: 5px;
-    right: -5px;
-    box-shadow: 0px 0px 0px 0px #0ee951;
-    transition: all 0s ease-in-out;
 }
 .ourWorkSection {
     width: 100%;
@@ -614,9 +597,12 @@ main .bannerSection {
     font-weight: 500;
     border: 2px solid #0ee951;
     margin-left: -6px;
+    box-shadow: 0px 0px 0px 0px #0ee951;
 }
 .subscriberSection .container .inputSubscribe button:hover{
     background-color: #0ee951;
+    top: 0;
+    right: 0;
 }
 .contactSection {
     width: 100%;
@@ -680,26 +666,6 @@ main .bannerSection {
     width: 50%;
     object-fit: cover;
 }
-.contactSection .btn button {
-    width: 100%;
-    margin-top: 50px;
-    background-color: transparent;
-    width: max-content;
-    padding: 10px 30px;
-    border: 2px solid #0ee951;
-    box-shadow: 5px 5px 0px 1px #0ee951;
-    font-size: 14px;
-    color: white;
-    font-weight: 300;
-    transition: all 0s ease-in-out;
-}
-.contactSection .btn button:hover {
-   position: relative;
-    top: 5px;
-    right: -5px;
-    box-shadow: 0px 0px 0px 0px #0ee951;
-    transition: all 0s ease-in-out;
-}
 .detailsSection {
     width: 100%;
     background-color: #212D37;
@@ -734,4 +700,111 @@ main .bannerSection {
     line-height: 20px;
     font-weight: 400;
     opacity: .7;
+}
+.mainFooter {
+    width: 100%;
+    background-color: #1C262F;
+    padding: 50px 0px;
+}
+.mainFooter ul{
+    display: flex;
+}
+.mainFooter ul li{
+    width: calc(100% / 4);
+    color: white;
+}
+.mainFooter ul li:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 30px;
+}
+.mainFooter ul li:nth-child(1) h2 {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.mainFooter ul li:nth-child(1) p,
+.mainFooter ul li:nth-child(4) p {
+    font-size: 14px;
+    font-weight: 400;   
+    line-height: 25px;
+    opacity: .7;
+}
+.mainFooter ul li:nth-child(1) .logos i{
+    font-size: 40px;
+    margin-right: 10px;
+}
+.mainFooter ul li:nth-child(1) .logos i:hover{
+    color: #0ee951;
+}
+.mainFooter ul li:nth-child(2),
+.mainFooter ul li:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding:0px 10px;
+}
+.mainFooter ul li:nth-child(2) h2,
+.mainFooter ul li:nth-child(3) h2,
+.mainFooter ul li:nth-child(4) h2 {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.mainFooter ul li:nth-child(2) div,.mainFooter ul li:nth-child(3) div{
+    width: max-content;
+    cursor: pointer;
+    font-size: 14px;
+    i{font-size: 20px; margin-right: 5px;}
+}
+.mainFooter ul li:nth-child(2) div:hover,
+.mainFooter ul li:nth-child(3) div:hover {
+    color: #0ee951;
+    i{color: white;}
+}
+.mainFooter ul li:nth-child(4) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.mainFooter ul li:nth-child(4) form input{
+    width: 70%;
+    padding:10px;
+}
+.mainFooter ul li:nth-child(4) form button{
+    padding:10px 25px;
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    border: 2px solid #0ee951;
+    margin-left: -6px;
+    box-shadow: 0px 0px 0px 0px #0ee951;
+}
+.mainFooter ul li:nth-child(4) form button:hover {
+    background-color: #0ee951;
+    top: 0;
+    right: 0;
+}
+.copyrightFooter {
+    width: 100%;
+    background-color: black;
+}
+.copyrightFooter .container{
+    padding: 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+.copyrightFooter .copyright,.copyrightFooter .author {
+    width: 50%;
+    padding: 10px 0px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.copyrightFooter .orgLogo{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content:right;
+    gap: 10px;
 }
