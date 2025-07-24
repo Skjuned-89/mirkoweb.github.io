@@ -3,6 +3,11 @@
         height: 300px;
     }
 }
+@media screen and (width<=360px) {
+    .testimonialSection .container h2{
+        text-align: center;
+    }
+}
 @media screen and (width<=576px) {
     .container {
         width: 100%;
@@ -29,7 +34,7 @@
     }
     .aboutUsSection .container {
         flex-direction: column;
-        padding: 0px 20px;
+        padding: 50px 20px;
     }
     .aboutUsSection .container .aboutUsContent {
         width: 100%;
@@ -65,7 +70,7 @@
         flex-direction: column;
         justify-content: space-between;
         gap: 30px;
-        padding: 0 20px;
+        padding: 50px 20px;
     }
     .ourWorkSection .aboutWork ul {
         justify-content: space-between;
@@ -120,9 +125,29 @@
     .subscriberSection .container .inputSubscribe button {
         width: 100%;
     }
+    .contactSection{
+        padding: 20px;
+    }
+    .contactSection .contactContent {
+        width: 100%;
+    }
+    .contactSection img {
+        display: none;
+    }
+    .contactSection .btn {
+        width: 100%;
+        padding: 15px 0px;
+    }
     .detailsSection .container ul li {
         width: calc(100% / 1);
         margin: 25px 0px;
+    }
+    .mainFooter ul{
+        flex-direction: column;
+    }
+    .mainFooter ul li{
+        width: 100%;
+        margin-top: 50px;
     }
 }
 @media screen and (width>=576px) {
@@ -147,6 +172,7 @@
     }
     .aboutUsSection .container {
         flex-direction: column;
+        padding: 50px 20px;    
     }
     .aboutUsSection .container .aboutUsContent {
         width: 90%;
@@ -201,6 +227,9 @@
     .plansCards .planCard {
         width: 100%;
     }
+    .ourWorkSection {
+        padding: 100px 0px;
+    }
     .subscriberSection .container {
         flex-direction: column;
     }
@@ -235,6 +264,13 @@
     .detailsSection .container ul li {
         width: 100%;
         margin: 25px 0px;
+    }
+    .mainFooter ul{
+        flex-direction: column;
+    }
+    .mainFooter ul li{
+        width: 100%;
+        margin-top: 50px;
     }
 }
 @media screen and (width>=768px) {
@@ -285,7 +321,16 @@
     .detailsSection .container ul li {
         width: 100%;
         align-items: center;
+    }    
+    .mainFooter ul{
+        flex-direction: row;
+        flex-wrap: wrap;
     }
+    .mainFooter ul li{
+        width: 50%;
+        margin-top: 50px;
+    }
+  
 }
 @media screen and (width>=1024px) {
     .container {
@@ -315,6 +360,7 @@
     }
     .aboutUsSection .container {
         flex-direction: row;
+        padding: 50px 30px;    
     }
     .aboutUsSection .container .aboutUsContent {
         width: 70%;
@@ -338,6 +384,7 @@
     .ourWorkSection {
         flex-direction: row;
         padding: 100px 0px;
+
     }
     .ourWorkSection img {
         width: 50%;
@@ -390,6 +437,17 @@
     }
     .detailsSection .container ul li{
         width: calc(100% / 2);
+    }
+    .contactSection {
+        flex-direction: row;
+    }
+    .mainFooter ul{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .mainFooter ul li{
+        width: calc(100% / 4); ;
+        margin-top: 50px;
     }
 }
 @media screen and (width>=1200px) {
