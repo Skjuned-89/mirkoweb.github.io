@@ -196,3 +196,12 @@ gsap.from(".detailsSection .container ul", {
         start: "top 90%"
     }
 });
+gsap.from(".mainFooter .container", {
+    x: -100,
+    duration: 1,
+    scrollTrigger: {
+        trigger: ".mainFooter .container",
+        scroller: "body",
+        start: "top 70%"
+    }
+});
