@@ -34,7 +34,7 @@ menu.addEventListener("click", () => {
     else {
         headerCont.parentElement.style.backgroundColor = "#1c262f"
         menuIcon.style.color = "#fff";
-        if (smallScreen.style.right == "-125%") {
+        if (smallScreen.style.right == "125%") {
             smallScreen.style.right = "-8%";
             console.log("else 0 btn click")
         } else {
