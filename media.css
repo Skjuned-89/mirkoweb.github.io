@@ -9,6 +9,12 @@
     }
 }
 @media screen and (width<=576px) {
+    nav .menu {
+        display: block;
+    }
+    nav .largeScreen {
+        display: none;
+    }
     .container {
         width: 100%;
         padding: 0 20px;
@@ -151,6 +157,15 @@
     }
 }
 @media screen and (width>=576px) {
+    nav .menu {
+        display: block;
+    }
+    nav.largeScreen {
+        display: flex;
+    }
+    nav .largeScreen {
+        display: none;
+    }
     .container {
         width: 100%;
         padding: 0 50px;
@@ -277,12 +292,6 @@
     .container {
         width: 100%;
     }
-    nav .menu {
-        display: block;
-    }
-    nav ul {
-        display: none;
-    }
     header .container nav {
         width: 100%;
         display: flex;
@@ -336,13 +345,14 @@
     .container {
         width: 1024px;
     }
-    nav .menu {
+    nav .menu,
+    header .container nav .smallScreen {
         display: none;
     }
     header .container nav {
         width: 50%;
     }
-    header .container nav ul {
+    header .container nav .largeScreen {
         width: 100%;
         display: flex;
         justify-content: space-between;
