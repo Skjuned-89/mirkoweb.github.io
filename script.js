@@ -23,26 +23,25 @@ window.addEventListener('scroll', () => {
 menu.addEventListener("click", () => {
     document.body.style
     if (window.scrollY > 0) {
-        if (smallScreen.style.right == "125%") {
+        if (smallScreen.style.right == "170%") {
             smallScreen.style.right = "-8%";
             console.log("if 0 btn click")
         } else {
-            smallScreen.style.right = "125%";
+            smallScreen.style.right = "170%";
             console.log("if 100 btn click")
         }
     }
     else {
         headerCont.parentElement.style.backgroundColor = "#1c262f"
         menuIcon.style.color = "#fff";
-        if (smallScreen.style.right == "125%") {
+        if (smallScreen.style.right == "170%") {
             smallScreen.style.right = "-8%";
             console.log("else 0 btn click")
         } else {
-            smallScreen.style.right = "-8%";
+            smallScreen.style.right = "170%";
             console.log("else 125 btn click")
             if (window.scrollY > 0) {
                 headerCont.parentElement.style.backgroundColor = "#1c262f"
-
             } else {
                 headerCont.parentElement.style.backgroundColor = "transparent"
                 menuIcon.style.color = "#000";
@@ -78,7 +77,7 @@ scrollView("link4", "contactSection");
 
 function smscrollView(smeventclass, smviewclass) {
     document.querySelector(`.${smeventclass}`).addEventListener("click", () => {
-        smallScreen.style.right = "125%";
+        smallScreen.style.right = "170%";
         document.querySelector(`.${smviewclass}`).scrollIntoView({ behavior: "smooth" });
         console.log("button was clicked")
     });
