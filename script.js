@@ -23,19 +23,23 @@ window.addEventListener('scroll', () => {
 menu.addEventListener("click", () => {
     document.body.style
     if (window.scrollY > 0) {
-        if (smallScreen.style.right == "100%") {
-            smallScreen.style.right = "0%";
+        if (smallScreen.style.right == "125%") {
+            smallScreen.style.right = "-8%";
+            console.log("if 0 btn click")
         } else {
-            smallScreen.style.right = "100%";
+            smallScreen.style.right = "125%";
+            console.log("if 100 btn click")
         }
     }
     else {
         headerCont.parentElement.style.backgroundColor = "#1c262f"
         menuIcon.style.color = "#fff";
-        if (smallScreen.style.right == "100%") {
-            smallScreen.style.right = "0%";
+        if (smallScreen.style.right == "-125%") {
+            smallScreen.style.right = "-8%";
+            console.log("else 0 btn click")
         } else {
-            smallScreen.style.right = "100%";
+            smallScreen.style.right = "-8%";
+            console.log("else 125 btn click")
             if (window.scrollY > 0) {
                 headerCont.parentElement.style.backgroundColor = "#1c262f"
 
@@ -74,8 +78,9 @@ scrollView("link4", "contactSection");
 
 function smscrollView(smeventclass, smviewclass) {
     document.querySelector(`.${smeventclass}`).addEventListener("click", () => {
-        smallScreen.style.right = "100%";
+        smallScreen.style.right = "125%";
         document.querySelector(`.${smviewclass}`).scrollIntoView({ behavior: "smooth" });
+        console.log("button was clicked")
     });
 }
 smscrollView("smhome", "bannerSection");
